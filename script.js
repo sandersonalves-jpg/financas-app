@@ -58,6 +58,9 @@ function formatarBRL(valor) {
 function obterAnoMes(dateStr) {
   const d = new Date(dateStr);
   if (isNaN(d)) return null;
+  const editIdInput = document.getElementById('editIdInput') || document.createElement('input');
+editIdInput.type
+
   const ano = d.getFullYear();
   const mes = String(d.getMonth() + 1).padStart(2, "0");
   return `${ano}-${mes}`;
